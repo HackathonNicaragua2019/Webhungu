@@ -9,6 +9,8 @@
         <title>Plataforma UHUNG</title>
     <link rel="icon" href="img/logo_final_2.png" >
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/animacionP.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
     <link rel="stylesheet" href="css/animate.css">
@@ -24,6 +26,25 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+            .zoom{
+                /* Aumentamos la anchura y altura durante 2 segundos */
+                transition: width 2s, height 2s, transform 2s;
+                -moz-transition: width 2s, height 2s, -moz-transform 2s;
+                -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+                -o-transition: width 2s, height 2s,-o-transform 2s;
+            }
+            .zoom:hover{
+                /* tranformamos el elemento al pasar el mouse por encima al doble de
+                   su tamaño con scale(2). */
+                transform : scale(1.5);
+                -moz-transform : scale(2);      /* Firefox */
+                -webkit-transform : scale(0.5);   /* Chrome - Safari */
+                -o-transform : scale(2);        /* Opera */
+            }
+    </style>
 </head>
 
 <body>
@@ -47,7 +68,7 @@
                                 <!-- <li class="nav-item active">
                                     <a class="nav-link" href="index.html">Incio</a>
                                 </li> -->
-                                <li class="nav-item active">
+                                <li class="nav-item ">
                                     <a class="nav-link" href="cursos.html">Cursos</a>
                                 </li>
                                 <li class="nav-item">
@@ -78,8 +99,8 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
-                            <h2>Nuestros Cursos</h2>
-                            <p>Inicio<span>/</span>Cursos</p>
+                            <h2>Materiales Interactivos</h2>
+                            <p>Inicio<span>/</span>Materiales</p>
                         </div>
                     </div>
                 </div>
@@ -94,101 +115,59 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-5">
                         <div class="section_tittle text-center">
-                            <p>CursosPopulares</p>
-                            <h2>Cursos Ofertados </h2>
+                            <p></p>
+                            <h2>Materiales </h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="single_special_cource">
-                            <img src="img/special_cource_1.png" class="special_img" alt="">
+                        <div class="single_special_cource ">
+                            <img src="img/video.png" class="zoom special_img" alt="">
                             <div class="special_cource_text">
-                                <a href="course-details.html" class="btn_4">Curso Elemental del Miskito</a>
+                                <a href="" class="btn_4">Videos Interactivos</a>
                                 <h4></h4>
-                                <a href="course-details.html"><h3>Nivel Basico</h3></a>
-                                <p></p>
-                                <div class="author_info">
-                                    <div class="author_img">
-                                        <img src="img/author/author_1.png" alt="">
-                                        <div class="author_info_text">
-                                            <p>Docente:</p>
-                                            <h5><a href="#">Enoc Narváez</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="author_rating">
-                                        <div class="rating">
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/star.svg" alt=""></a>
-                                        </div>
-                                        <p>4.8 Ratings</p>
-                                    </div>
-                                </div>
                             </div>
     
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="single_special_cource">
-                            <img src="img/special_cource_2.png" class="special_img" alt="">
+                            <img src="img/documentos_digitales.png" class="zoom special_img" alt="">
                             <div class="special_cource_text">
-                                <a href="course-details.html" class="btn_4">Curso Comunicativo del Miskito</a>
-                                <h4></h4>
-                                <a href="#"> <h3>Nivel Intermedio</h3></a>
-                                <p></p>
-                                <div class="author_info">
-                                    <div class="author_img">
-                                        <img src="img/author/author_2.png" alt="">
-                                        <div class="author_info_text">
-                                            <p>Docente:</p>
-                                            <h5><a href="#">Keybeling Mejia</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="author_rating">
-                                        <div class="rating">
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/star.svg" alt=""></a>
-                                        </div>
-                                        <p>3.8 Ratings</p>
-                                    </div>
-                                </div>
+                                <a href="#" class="btn_4">Documentos Digitales</a>
+                              
                             </div>
-    
+
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="single_special_cource">
-                            <img src="img/special_cource_3.png" class="special_img" alt="">
-                            <div class="special_cource_text">
-                                <a href="course-details.html" class="btn_4">Curso de Nivel Superior del Miskito</a>
-                                <h4></h4>
-                                <a href="course-details.html">  <h3>Nivel Avanzado</h3> </a> 
-                                <p></p>
-                                <div class="author_info">
-                                    <div class="author_img">
-                                        <img src="img/author/author_3.png" alt="">
-                                        <div class="author_info_text">
-                                            <p>Docente</p>
-                                            <h5><a href="#">Gerald Flores</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="author_rating">
-                                        <div class="rating">
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                            <a href="#"><img src="img/icon/star.svg" alt=""></a>
-                                        </div>
-                                        <p>3.8 Ratings</p>
-                                    </div>
+                            <div class="single_special_cource">
+                                <img src="img/galeria.png" class="zoom special_img" alt="">
+                                <div class="special_cource_text">
+                                    <a href="#" class="btn_4">Galería
+                                    </a>
+                                  
                                 </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 py-3">
+                                <div class="single_special_cource">
+                                    <img src="img/interactivos.png" class="zoom special_img" alt="">
+                                    <div class="special_cource_text">
+                                        <a href="l" class="btn_4">Imagenes Interactivas</a>
+                                      
+                                    </div>
+        
+                                </div>
+                        </div>
+
+                    <div class="col-sm-6 col-lg-4 py-3">
+                        <div class="single_special_cource">
+                            <img src="img/mapas.png" class="zoom special_img" alt="">
+                            <div class="special_cource_text">
+                                <a href="#" class="btn_4 text-center">Mapas</a>
                             </div>
     
                         </div>
