@@ -176,19 +176,19 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_member_counter">
-                        <span class="counter">100</span>
+                        <span class="counter">1024</span>
                         <h4>Docentes</h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_member_counter">
-                        <span class="counter">939</span>
+                        <span class="counter">960</span>
                         <h4> Estudiantes</h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_member_counter">
-                        <span class="counter">120</span>
+                        <span class="counter">1020</span>
                         <h4>Estudiantes Online</h4>
                     </div>
                 </div>
@@ -220,8 +220,8 @@
                         <img src="img/special_cource_1.png" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">Curso Elemental del Miskito</a>
-                            <h4></h4>
-                            <a href="course-details.html"><h3>Nivel Basico</h3></a>
+                            <h4>Nivel Basico</h4>
+                            <a href="course-details.html"><h3></h3></a>
                             <p></p>
                             <div class="author_info">
                                 <div class="author_img">
@@ -250,9 +250,9 @@
                     <div class="single_special_cource">
                         <img src="img/special_cource_2.png" class="special_img" alt="">
                         <div class="special_cource_text">
-                            <a href="course-details.html" class="btn_4">Curso Comunicativo del Miskito</a>
-                            <h4></h4>
-                            <a href="#"> <h3>Nivel Intermedio</h3></a>
+                            <a href="course-details.html" class="btn_4">Curso Básico Comunicativo del Miskito</a>
+                            <h4>Nivel Intermedio</h4>
+                            <a href="course-details.html"> <h3></h3></a>
                             <p></p>
                             <div class="author_info">
                                 <div class="author_img">
@@ -450,6 +450,43 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/waypoints.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 
 </html>
