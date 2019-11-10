@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- llamar funcion Registrar.js -->
+  
+    <!-- insercion de script de Firebase_web -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAbO3OvVz5t0WUztRTZ_OjY36SxfpyaEP4",
+    authDomain: "uhungapp.firebaseapp.com",
+    databaseURL: "https://uhungapp.firebaseio.com",
+    projectId: "uhungapp",
+    storageBucket: "uhungapp.appspot.com",
+    messagingSenderId: "629348428142",
+    appId: "1:629348428142:web:4e031568588e4875dcb97f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+
+   
+    <div class="container">
+            <h3>Registro de usuarios</h3>
+            <form>
+                    <div class="form-group">
+                      <label >Email</label>
+                      <input type="email" class="form-control" id="email"  autocomplete="current-email" placeholder="Ingrese email">
+                     
+                    </div>
+                    <div class="form-group">
+                      <label>Contraseña</label>
+                      <input type="password" class="form-control" id="pass" autocomplete="current-password" placeholder="Contraseña">
+                    </div>
+                    
+                    <button onclick="registrar()" class="btn btn-primary">Enviar</button>
+                  </form>
+    
+
+    </div>
+        
+        <div class="container py-5">
+                <h3>Ingreso de Usuario</h3>
+                <form>
+                        <div class="form-group">
+                          <label >Email</label>
+                          <input type="email" class="form-control" id="email"  autocomplete="current-email" placeholder="Ingrese email">
+                         
+                        </div>
+                        <div class="form-group">
+                          <label>Contraseña</label>
+                          <input type="password" class="form-control" id="pass" autocomplete="current-password" placeholder="Contraseña">
+                        </div>
+                        
+                        <button onclick="registrar()" class="btn btn-primary">Enviar</button>
+                      </form>
+        
+    
+        </div>
+
+       
+
+              <script src="js/registro.js"></script>
+              <script src="js/jquery-1.12.1.min.js"></script>
+              <!-- popper js -->
+              <script src="js/popper.min.js"></script>
+              <!-- bootstrap js -->
+              <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
