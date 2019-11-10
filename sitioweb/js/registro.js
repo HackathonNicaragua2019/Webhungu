@@ -1,9 +1,9 @@
 function registrar()
 {
     var email=document.getElementById('email').value;
-    var pass=document.getElementById('pass').value;
+    var password=document.getElementById('pass').value;
 
-                firebase.auth().createUserWithEmailAndPassword(email, pass)
+                firebase.auth().createUserWithEmailAndPassword(email, password)
                 .catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
@@ -14,6 +14,7 @@ function registrar()
                 alert(errorMessage);
             }
             console.log(error);
+            console.log(errorMessage);
             });
 
 
